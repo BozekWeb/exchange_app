@@ -7,12 +7,17 @@
 	align-items: center;
 	padding: 6rem 0rem;
 
+	@include breakpoint($breakpoint-small) {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
 	&__box {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		width: 100%;
+		width: 35%;
 	}
 
 	&__swap {
@@ -104,6 +109,7 @@
 
 		z-index: 1;
 
+		cursor: pointer;
 		transition: all 0.5s ease;
 
 		&::-webkit-scrollbar {
@@ -112,11 +118,10 @@
 
 		&::-webkit-scrollbar-thumb {
 			background-color: $theme-color-blue-3;
-			//border: 3px solid orange; /* creates padding around scroll thumb */
 		}
 
 		&::-webkit-scrollbar-track {
-			background: $theme-color-blue-2; /* color of the tracking area */
+			background: $theme-color-blue-2;
 		}
 	}
 
@@ -140,131 +145,3 @@
 		font-size: 2rem;
 	}
 }
-
-// .currency-b {
-// 	position: relative;
-// }
-
-// .currency-input:focus + .currency-box {
-// 	max-height: 10rem;
-// }
-
-// .currency-box {
-// 	max-height: 0;
-
-// 	overflow-x: hidden;
-// 	overflow-y: scroll;
-// 	transition: all 0.5s ease;
-
-// 	position: absolute;
-// 	right: 0;
-
-// 	display: flex;
-// 	width: 100%;
-// 	flex-wrap: wrap;
-// 	justify-content: flex-end;
-
-// 	&::-webkit-scrollbar {
-// 		width: 12px; /* width of the entire scrollbar */
-// 	}
-
-// 	&::-webkit-scrollbar-thumb {
-// 		background-color: blue; /* color of the scroll thumb */
-// 		border-radius: 20px; /* roundness of the scroll thumb */
-// 		border: 3px solid orange; /* creates padding around scroll thumb */
-// 	}
-
-// 	&::-webkit-scrollbar-track {
-// 		background: orange; /* color of the tracking area */
-// 	}
-
-// 	div {
-// 		color: red;
-// 		background-color: grey;
-// 		padding: 0.2rem;
-// 		width: 3rem;
-
-// 		&:hover {
-// 			background-color: yellow;
-// 			color: green;
-// 			cursor: pointer;
-// 		}
-// 	}
-// }
-
-// .currency {
-// 	display: flex;
-// 	flex-direction: column;
-// 	align-items: center;
-// 	justify-content: center;
-// 	padding: 2rem;
-
-// 	background-color: green;
-// 	width: 100%;
-// 	max-width: 300px;
-
-// 	&__amount {
-// 		-moz-appearance: textfield;
-
-// 		&::-webkit-inner-spin-button,
-// 		&::-webkit-outer-spin-button {
-// 			-webkit-appearance: none;
-// 			margin: 0;
-// 		}
-// 	}
-
-// 	option {
-// 		background-color: blue;
-// 	}
-
-// 	&__amount,
-// 	&__name {
-// 		font-size: 4rem;
-// 		color: #fff;
-// 		border: none;
-// 		background: none;
-
-// 		width: 100%;
-// 		text-align: center;
-
-// 		&:focus {
-// 			outline: none;
-// 		}
-// 		margin-bottom: 1rem;
-// 		border: 1px solid red;
-// 	}
-
-// 	&__name {
-// 		border-color: blue;
-
-// 		font-weight: 700;
-// 		background-color: yellow;
-
-// 		&::-webkit-calendar-picker-indicator {
-// 			display: none;
-// 		}
-// 	}
-
-// 	&__data {
-// 		background-color: red;
-// 	}
-
-// 	&__datalist {
-// 		background-color: red;
-// 	}
-
-// }
-
-// &__amount {
-// 	text-align: right;
-
-// 	&:focus {
-// 		outline: none;
-// 		color: rgb(67, 171, 255);
-// 	}
-// }
-
-// &__name {
-// 	text-align: left;
-// 	text-transform: uppercase;
-// }

@@ -17,6 +17,11 @@
 	background-image: linear-gradient(to right bottom, rgba($theme-color-blue-2, 1), rgba($theme-color-blue-3, 0.4));
 	border-radius: 4px;
 	box-shadow: 0 0 1px 1px $theme-color-blue-3;
+
+	@include breakpoint($breakpoint-small) {
+		width: 600px;
+		height: auto;
+	}
 }
 
 .navbar {
@@ -48,4 +53,8 @@
 	font-size: 2rem;
 	text-align: center;
 	padding-bottom: 4rem;
+
+	@media (min-width: 600px) {
+		width: 100%;
+	}
 }
