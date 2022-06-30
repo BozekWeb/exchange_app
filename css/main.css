@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Tomorrow:wght@100;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  background-color: #0f1026;
+  color: #f2f2f2;
+  padding: 2rem;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5rem;
+  padding: 5rem 2rem 0rem;
+  background-image: linear-gradient(to right bottom, #1b2040, rgba(73, 115, 242, 0.4));
+  border-radius: 4px;
+  box-shadow: 0 0 1px 1px #4973f2;
+}
+
+.navbar {
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+.navbar__logo {
+  font-family: "Tomorrow", sans-serif;
+  text-shadow: 1px 2px #f2911b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
+.navbar__logo--main {
+  font-size: 3.6rem;
+}
+.navbar__logo--sub {
+  font-size: 1.8rem;
+}
+
+.header {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 4rem;
+}
+
+.currency {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 0rem;
+}
+.currency__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.currency__swap {
+  margin: 4rem 0rem;
+  padding: 0.8rem 4rem;
+  border: none;
+  border-radius: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  cursor: pointer;
+  color: inherit;
+  background-color: #4973f2;
+  box-shadow: 2px 2px 2px 1px #0f1026;
+}
+.currency__input {
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+.currency__input:focus {
+  outline: none;
+  color: #f2911b;
+}
+.currency__amount {
+  width: 100%;
+  font-size: 4rem;
+  font-family: "Tomorrow", sans-serif;
+  -moz-appearance: textfield;
+}
+.currency__amount::-webkit-inner-spin-button, .currency__amount::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.currency__name-box {
+  position: relative;
+  width: 100%;
+  max-width: 60px;
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.currency__name {
+  width: 100%;
+  text-align: center;
+  border-top: 2px solid #4973f2;
+  font-size: 2rem;
+  padding-top: 0.2rem;
+}
+.currency__name:focus + .currency__name-holder {
+  max-height: 10rem;
+}
+.currency__name-holder {
+  position: absolute;
+  background-color: #0f1026;
+  max-height: 0rem;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
+  top: 3rem;
+  z-index: 1;
+  transition: all 0.5s ease;
+}
+.currency__name-holder::-webkit-scrollbar {
+  width: 10px;
+}
+.currency__name-holder::-webkit-scrollbar-thumb {
+  background-color: #4973f2;
+}
+.currency__name-holder::-webkit-scrollbar-track {
+  background: #1b2040; /* color of the tracking area */
+}
+.currency__name-item {
+  width: 4rem;
+  font-size: 1.2rem;
+  z-index: 1;
+  text-align: center;
+  padding: 0.5rem;
+  transition: 0.5s ease all;
+}
+.currency__name-item:hover {
+  background-color: #1b2040;
+}
+.currency__rate {
+  margin-top: 4rem;
+  font-size: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */
