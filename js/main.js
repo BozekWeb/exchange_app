@@ -175,6 +175,7 @@ let currentCurrency
 let currencyShortName1
 let currencyShortName2
 
+
 const main = () => {
 	prepareDOMElements()
 	prepareDOMEvents()
