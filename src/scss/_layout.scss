@@ -11,16 +11,21 @@
 	justify-content: flex-start;
 	align-items: center;
 
-	padding-top: 5rem;
 	padding: 5rem 2rem 0rem;
 
 	background-image: linear-gradient(to right bottom, rgba($theme-color-blue-2, 1), rgba($theme-color-blue-3, 0.4));
 	border-radius: 4px;
 	box-shadow: 0 0 1px 1px $theme-color-blue-3;
 
-	@include breakpoint($breakpoint-small) {
+	@media (min-width: 37.5em) {
 		width: 600px;
 		height: auto;
+	}
+
+	@media (min-width: 62.5em) {
+		width: 800px;
+		height: auto;
+		padding: 5rem 2rem;
 	}
 }
 
@@ -46,6 +51,16 @@
 		&--sub {
 			font-size: 1.8rem;
 		}
+
+		@media (min-width: 62.5em) {
+			&--main {
+				font-size: 3.2rem;
+			}
+
+			&--sub {
+				font-size: 2.2rem;
+			}
+		}
 	}
 }
 
@@ -54,7 +69,11 @@
 	text-align: center;
 	padding-bottom: 4rem;
 
-	@media (min-width: 600px) {
+	@media (min-width: 37.5em) {
 		width: 100%;
+	}
+
+	@media (min-width: 62.5em) {
+		font-size: 2.4rem;
 	}
 }

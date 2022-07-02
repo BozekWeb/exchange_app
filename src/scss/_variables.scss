@@ -12,8 +12,3 @@ $theme-color-white: #f2f2f2;
 $breakpoint-small: 37.5em;
 $breakpoint-big: 62.5em;
 
-@mixin breakpoint($size) {
-	@media (min-height: $size) {
-		@content;
-	}
-}
